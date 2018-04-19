@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+    <meat name="viewport" content="width=divice-width"/>
+	<title>Float Block Test</title>
+	<!-- 
+	    This is an example of an inline CSS block. It is created
+		using the style element. Your external (linked) CSS styles
+		are applied first. The styles here are applied *after* 
+		any external styles. 
+	-->
+	<style>
+		/* NOTE: CSS style comments in here. */
+		/* Define a block class. These divs  */
+		/* will be 100px x 100px blocks. */
+        
+		.block 
+		{
+			width: 100px;
+			height: 100px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            float: left;
+		}
+        
+		.rightblock
+		{
+			width: 200px;
+			height: 200px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            float: right;
+            background-color: yellow;
+            outline: orange solid;
+		/* You'll add more CSS code in here */
+        }
+        
+        .bottomblock
+		{
+			width: auto;
+			height: 50px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            background-color: rgb(200,200,200);
+
+		/* You'll add more CSS code in here */
+        }
+        
+        .block.blue
+		{
+			width: 100px;
+			height: 100px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            background-color: blue;
+            outline: blue solid;
+
+		/* You'll add more CSS code in here */
+        }
+        .block.green
+		{
+			width: 100px;
+			height: 100px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            background-color: green;
+            outline: green solid;
+
+		/* You'll add more CSS code in here */
+        }
+        .block.red
+		{
+			width: 100px;
+			height: 100px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            background-color: red;
+            outline: red solid;
+
+		/* You'll add more CSS code in here */
+        }
+        
+        .block.yellow
+		{
+			width: 100px;
+			height: 100px;
+			/* This outline is temporary. As soon
+			   as you have defined your background
+			   color classes and have them working,
+			   delete this outlie property */
+            background-color: yellow;
+            outline: yellow solid;
+
+		/* You'll add more CSS code in here */
+        }
+        .bottomblock#bottom
+        {
+            clear:both;
+        }
+        
+        
+	</style>
+</head>
+<body>
+	<!--
+	 This is where we have defined all of our
+	 blocks (in the form of divs). Some of the
+	 classes being used already exist. You'll
+	 need to create the rest in the above
+	 style block. 
+	-->
+	
+	<!-- Heading -->
+	<h1> Float Block Test </h1>
+	
+	<!-- Large yellow block -->
+	<div class="rightblock yellow"></div>
+	
+	<!-- Set of red, green, and blue blocks -->
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	<div class="block red"></div>
+	<div class="block blue"></div>
+	<div class="block green"></div>
+	
+	<!-- This bottom block is kind of like
+	     a footer. -->
+	<div class="bottomblock" id="bottom"></div>
+</body>
+    <footer> 
+        <!--
+            3-The reason the blocks are different colors is because they are block level contaners that have been resized by the height and width so it doesn't fill the block completely. The colors are coded by CSS according to the classes inside the div element. Also, the normal flow isn't affected.
+            4-The float positioning moves the block to the right adjusting the normal flow of the html document, but holds
+            the memory location of the object. 
+            6-The reason this is happening is because you are floating everything in the block-level elemnt to the left because the block element. When moved to the right the colors are unmatched and it looks upside down because of the relationship the right float of the first block. Also, the botoom is displaced and moved up to the top of the normal flow.
+            7-We have to clear both floats to reduce the adjustment of the normal flow of displacement.
+            
+        -->
+    </footer>
+</html>

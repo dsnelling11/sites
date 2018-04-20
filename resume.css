@@ -1,0 +1,94 @@
+ 
+
+#work{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0;
+            text-align: center;
+            overflow: auto;
+            background-color: #333;
+    }
+    
+.first {
+        display:inline-block;
+          }
+    
+.lin{
+        font-size: 30px;
+        padding: 5px;
+        background: black;
+        color: white;   
+    }
+    
+.lin:link{
+        background: rgba(255,255,255, .5);
+    }
+
+.lin:visited{
+        background-color: rgb(0,255,255)
+}
+
+.lin:hover{
+        background-color: hsl(100, 20%, 30%)
+}
+#body{
+  text-align: center;
+        
+}
+
+aside{
+   text-align: center;
+    
+}
+
+body{
+    background-image: url("images/darries.jpeg");
+    background-repeat: repeat;
+}
+
+
+a{
+    text-align: left;
+    background: rgb(100,200,300);
+}
+
+.schools{
+    width: 50px;
+    height:30px;
+
+}
+
+h2{
+    margin-left: 40px;
+
+}
+
+#getDate{
+     margin-top: 100px;
+     text-align: center;
+} 
+
+header{
+    font-family: serif;
+    font-size: 20px;
+}
+
+p{
+    
+    font-family: cursive;
+}
+
+h4{
+    padding-left: 10px; 
+    font-size: 20px;
+}
+
+h3{
+    font-family: fantasy;
+
+}
+
+hr{
+    margin-right: 50%
+
+}
